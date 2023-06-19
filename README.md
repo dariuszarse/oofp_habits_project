@@ -22,6 +22,7 @@ There I cover in detail how to navigate through the app and which options are av
 
 Test:
 
-To run the unit download test.py and safe it in the same folder as the other .py files. Then execute test.py. Check the docstrings of the tests to see what they do
-and for which situation they are designed. The insert_dummy_data test for example only tests if the dummy data is successfully inserted into the database table and can fail
-if you have already created an additional habit or deleted an existing one.
+To run the unit download test.py and safe it in the same folder as the other .py files. You should run main.py first, without changing any habits as the tests rely on 
+the dummy data created when starting up main.py for the first time. If you have changed habits already, delete the newly created habits.db file and run main.py. Just start
+it up and select option 5 to quit the app right away. Then execute test.py. Check the docstrings of the tests to see what they do
+and what the success criteria are.

@@ -1,10 +1,3 @@
-#requirements
-
-#return a list of all currently tracked habits
-#return a list of all habits with the same periodicity
-#return the longest run streak of all defined habits
-#and return the longest run streak for a given habit
-
 import re
 import os
 import habit as habit
@@ -22,19 +15,18 @@ db.habit_broken()
 os.system("cls")
 
 #welcoming message
-print('Welcome to this habit tracking app. I wish you all the best chasing your goals!')
+print('Thank you for using my habit tracker. Good luck chasing your goals!')
 
 def menu():
     '''this function takes user input (1-5), validates a 'correct' choice and navigates to the chosen function in the 'main.py' file'''
 
-    menu_message = '''\nYou're in the main menu. What would you like to do?
-You have the following options:
+    menu_message = '''\nWelcome to the main menu! What would you like to do?
     [1] Display a selection of habits and/or streaks
     [2] Check off a habit for today
     [3] Create a new habit
     [4] Edit or delete an existing habit
     [5] Quit the app
-Please enter the number belonging to the option of your choice here: '''
+Please enter the number of your choice here: '''
     while True:
         user_choice = input(menu_message)
         regex = "[1-5]"
